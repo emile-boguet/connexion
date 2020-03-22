@@ -1,0 +1,59 @@
+<html lang="FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="connexion.css">
+    <link rel="shortcut icon" type="image/x-icon" href="Logo.png">
+    <title>Formulaire d'Inscription</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+                <form class="flex">
+                <div class="form1">
+                    <label class="formulaire-titre1"><abbr title="obligatoire"></abbr>Identifiant</label>
+                    <input type="text" placeholder="Identifiant" class="formulaire1" required />
+                    <label class="formulaire-titre1"><abbr title="obligatoire"></abbr>Mot de passe</label>
+                    <input type="password" placeholder="Mot de Passe" class="formulaire1" required />
+                    <label class="formulaire-titre1"><abbr title="obligatoire"></abbr>Mot de Passe</label>
+                    <input type="password" placeholder="Confirmation" class="formulaire1" required />
+                    <label class="formulaire-titre1"><abbr title="obligatoire"></abbr>Email</label>
+                    <input type="email" placeholder="Email" class="formulaire1" required />
+                    <label class="formulaire-titre1"><abbr title="obligatoire"></abbr>Date de naissance</label>
+                    <input type="date" placeholder="Date de naissance" class="formulaire1" required />
+                    <label class="formulaire-titre1"><abbr title="obligatoire"></abbr>Numéro de Téléphone</label>
+                    <input type="tel" placeholder="Numéro de Téléphone" class="formulaire1" required>
+                    <label class="formulaire-titre1">Niveau d'Etude</label>
+                    <select name="Niveau d'Etude" size="0" class="formulaire1" required>
+                        <option class="formulaire1">Obligatoire</option>
+                        <option class="formulaire1">Brevet des Collèges</option>
+                        <option class="formulaire1">CAP | BEP</option>
+                        <option class="formulaire1">BAC Général</option>
+                    </select required>
+                </div>
+                <div class="form2">
+                    <label class="formulaire-titre2"><abbr title="obligatoire"></abbr>Femme</label>
+                    <input class="coche" type="radio" name="radio1" value="radio1" required />
+                    <label class="formulaire-titre2"><abbr title="obligatoire"></abbr>Homme</label>
+                    <input class="coche" type="radio" name="radio1" value="radio2" required />
+                    <label class="formulaire-titre2"><abbr title="obligatoire"></abbr>Nom</label>
+                    <input type="text" placeholder="Nom" class="formulaire2" required />
+                    <label class="formulaire-titre2"><abbr title="obligatoire"></abbr>Prénom</label>
+                    <input type="text" placeholder="Prénom" class="formulaire2" required />
+                    
+                    <label class="formulaire-titre2">Loisirs</label>
+                    <input type="text" placeholder="Musique" class="formulaire2" />
+                    <input type="text" placeholder="Littérature" class="formulaire2" />
+                    <input type="text" placeholder="Sport" class="formulaire2" />
+                    <a class="lien" href="connexion.html">
+                        <input type="button" name="connexion" value="Connexion" class="bouton"/>
+                    </a>
+                </div>
+                </form>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

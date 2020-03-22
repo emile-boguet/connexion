@@ -1,0 +1,150 @@
+body
+{
+    margin: 0px;
+    background-color: #ffca4b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form-co
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35vh;
+    height: 35vh;
+    border: 55px double #ffca4b;
+    background-color: white;
+}
+.flex
+{
+    background-color: white;
+    border: 55px double #ffca4b;
+    display: flex;
+    flex-direction: row;
+    width: 75vh;
+    height: 75vh;
+}
+.form1
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65vh;
+    height: 65vh;
+    margin: 35px 0;
+}
+.form2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65vh;
+    height: 55vh;
+    margin: 85px 0;
+}
+.formulaire-titre1
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: courier;
+    font-size: 15px;
+    color: grey;
+    margin: 5px 0;
+    
+}
+.formulaire-titre2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5px 0;
+    color: grey;
+    font-family: courier;
+    font-size: 15px;
+}
+.formulaire1
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ffca4b;
+    background-color: white;
+    width: 175px;
+    height: 25px;
+    margin: 5px 0;
+    text-align: center;
+    color: #ffca4b;
+    font-size: 15px;
+    font-family: courier;
+}
+.formulaire2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ffca4b;
+    background-color: white;
+    margin: 5px 0;
+    width: 145px;
+    height: 25px;
+    text-align: center;
+    color: #ffca4b;
+    font-family: courier;
+    font-size: 15px;
+}
+.coche
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ffca4b;
+    background: white;
+}
+.bouton
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffca4b;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    font-family: courier;
+    margin: 5px 0;
+    
+}
+::placeholder
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffca4b;
+    font-size: 15px;
+    font-family: courier;
+}
+.lien
+{
+    text-align: center;
+    color: #ffca4b;
+    font-size: 15px;
+    font-family: courier;
+    text-decoration: none;
+    margin: 5px 0;
+}
