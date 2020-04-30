@@ -1,57 +1,57 @@
+<!DOCTYPE html>
 <html lang="FR">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="connexion.css">
     <link rel="shortcut icon" type="image/x-icon" href="Logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto+Mono:300&display=swap" rel="stylesheet">
     <title>Formulaire d'Inscription</title>
 </head>
 
 <body>
     <header></header>
     <main>
-                <form class="flex">
-                <div class="form1">
-                    <label class="formulaire-titre1"><abbr title="obligatoire"></abbr>Identifiant</label>
-                    <input type="text" placeholder="Identifiant" class="formulaire1" required />
-                    <label class="formulaire-titre1"><abbr title="obligatoire"></abbr>Mot de passe</label>
-                    <input type="password" placeholder="Mot de Passe" class="formulaire1" required />
-                    <label class="formulaire-titre1"><abbr title="obligatoire"></abbr>Mot de Passe</label>
-                    <input type="password" placeholder="Confirmation" class="formulaire1" required />
-                    <label class="formulaire-titre1"><abbr title="obligatoire"></abbr>Email</label>
-                    <input type="email" placeholder="Email" class="formulaire1" required />
-                    <label class="formulaire-titre1"><abbr title="obligatoire"></abbr>Date de naissance</label>
-                    <input type="date" placeholder="Date de naissance" class="formulaire1" required />
-                    <label class="formulaire-titre1"><abbr title="obligatoire"></abbr>Numéro de Téléphone</label>
-                    <input type="tel" placeholder="Numéro de Téléphone" class="formulaire1" required>
-                    <label class="formulaire-titre1">Niveau d'Etude</label>
-                    <select name="Niveau d'Etude" size="0" class="formulaire1" required>
-                        <option class="formulaire1">Obligatoire</option>
-                        <option class="formulaire1">Brevet des Collèges</option>
-                        <option class="formulaire1">CAP | BEP</option>
-                        <option class="formulaire1">BAC Général</option>
-                    </select required>
-                </div>
-                <div class="form2">
-                    <label class="formulaire-titre2"><abbr title="obligatoire"></abbr>Femme</label>
-                    <input class="coche" type="radio" name="radio1" value="radio1" required />
-                    <label class="formulaire-titre2"><abbr title="obligatoire"></abbr>Homme</label>
-                    <input class="coche" type="radio" name="radio1" value="radio2" required />
-                    <label class="formulaire-titre2"><abbr title="obligatoire"></abbr>Nom</label>
-                    <input type="text" placeholder="Nom" class="formulaire2" required />
-                    <label class="formulaire-titre2"><abbr title="obligatoire"></abbr>Prénom</label>
-                    <input type="text" placeholder="Prénom" class="formulaire2" required />
-                    
-                    <label class="formulaire-titre2">Loisirs</label>
-                    <input type="text" placeholder="Musique" class="formulaire2" />
-                    <input type="text" placeholder="Littérature" class="formulaire2" />
-                    <input type="text" placeholder="Sport" class="formulaire2" />
-                    <a class="lien" href="connexion.html">
-                        <input type="button" name="connexion" value="Connexion" class="bouton"/>
-                    </a>
-                </div>
-                </form>
+        <form id="form-in">
+            <article id="flex1-in">
+                <label class="label-in"><abbr title="obligatoire">Identifiant</abbr></label>
+                <input class="input-in" type="text" placeholder="Identifiant" />
+                <label class="label-in"><abbr title="obligatoire">Mot de passe</abbr></label>
+                <input class="input-in" type="password" placeholder="Mot de Passe" />
+                <label class="label-in"><abbr title="obligatoire">Confirmation</abbr></abbr></label>
+                <input class="input-in" type="password" placeholder="Confirmation" />
+                <label class="label-in"><abbr title="obligatoire">Email</abbr></label>
+                <input class="input-in" type="email" placeholder="Email" />
+                <label class="label-in"><abbr title="obligatoire">Date de naissance</abbr></label>
+                <input class="input-in" type="date" placeholder="Date de naissance" />
+                <label class="label-in"><abbr title="obligatoire">Numéro de Téléphone</abbr></label>
+                <input class="input-in" type="tel" placeholder="Numéro de Téléphone" />
+                <label class="label-in">Niveau d'Etude</label>
+                <select name="Niveau d'Etude" size="0">
+                    <option class="input-in">Obligatoire</option>
+                    <option class="input-in">Brevet des collèges</option>
+                    <option class="input-in">CAP | BEP</option>
+                    <option class="input-in">BAC Général</option>
+                </select>
+            </article>
+            <article id="flex2-in">
+                <label class="label-in"><abbr title="obligatoire">Femme</abbr></label>
+                <input type="radio" name="radio1" value="radio1" />
+                <label class="label-in"><abbr title="obligatoire">Homme</abbr></label>
+                <input type="radio" name="radio1" value="radio2" />
+                <label class="label-in"><abbr title="obligatoire">Nom</abbr></label>
+                <input class="input-in" type="text" placeholder="Nom" />
+                <label class="label-in"><abbr title="obligatoire">Prénom</abbr></label>
+                <input class="input-in" type="text" placeholder="Prénom" />
+                <label class="label-in">Loisirs</label>
+                    <input class="input-in" type="text" placeholder="Musique" />
+                    <input class="input-in" type="text" placeholder="Littérature" />
+                    <input class="input-in" type="text" placeholder="Sport" />
+                <a class="a-co" href="connexion.html">
+                    <input id="bouton-in" type="button" name="connexion" value="CONNEXION" />
+                </a>
+            </article>
+        </form>
     </main>
     <footer></footer>
 </body>

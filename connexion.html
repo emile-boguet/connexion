@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="connexion.css">
     <link rel="shortcut icon" type="image/x-icon" href="Logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto+Mono:300&display=swap" rel="stylesheet">
     <title>Formulaire de Connexion</title>
 </head>
 
@@ -12,17 +13,20 @@
     <header>
     </header>
     <main>
-        <form id="form-co">
-            <label class="formulaire-titre1">Identifiant :</label>
-            <input type="text" placeholder="Identifiant" class="formulaire1"/>
-            <label class="formulaire-titre1">Mot de passe :</label>
-            <input type="password" placeholder="Mot de Passe" class="formulaire1"/>
-            <input type="button" name="connexion" value="Connexion" class="bouton"/>
-            <a class="lien" href="inscription.html">Inscription ?</a>
-            <a class="lien" href="motdepasse.html">Mot de passe oublié ?</a>
+        <form id="form-co-mdp">
+            <label class="label-co-mdp"><abbr title="obligatoire">Identifiant</abbr></label>
+            <input class="input-co-mdp" type="text" placeholder="Identifiant" />
+            <label class="label-co-mdp"><abbr title="obligatoire">Mot de passe</abbr></label>
+            <input class="input-co-mdp" type="password" placeholder="Mot de Passe" />
+            <input id="bouton-co"type="button" name="connexion" value="CONNEXION" />
         </form>
+        <article id="flex-a">
+        <a class="a-co" href="inscription.html">Inscription ?</a>
+        <a class="a-co" href="motdepasse.html">Mot de passe oublié ?</a>
+        </article>
     </main>
-    <footer></footer>
+    <footer>
+    </footer>
 </body>
 
 </html>

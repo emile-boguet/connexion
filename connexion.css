@@ -1,150 +1,274 @@
 body
 {
-    margin: 0px;
-    background-color: #ffca4b;
+    max-width: 100%;
+    max-height: 100%;
+    font-family: 'Roboto Mono', monospace;
+}
+
+header
+{
+    height: 15%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0; right: 0;
+}
+
+main
+{
+    height: 70%;
+    width: 100%;
+    top: 15%; bottom: 15%;
+    left: 0; right: 0;
+    position: fixed;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url(fond.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
-#form-co
+
+/* DEBUT CONNEXION | MOT DE PASSE OUBLIE */
+
+#form-co-mdp
 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 35vh;
-    height: 35vh;
-    border: 55px double #ffca4b;
-    background-color: white;
-}
-.flex
-{
-    background-color: white;
-    border: 55px double #ffca4b;
-    display: flex;
-    flex-direction: row;
-    width: 75vh;
-    height: 75vh;
-}
-.form1
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 65vh;
-    height: 65vh;
-    margin: 35px 0;
-}
-.form2
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 65vh;
-    height: 55vh;
-    margin: 85px 0;
-}
-.formulaire-titre1
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: courier;
-    font-size: 15px;
-    color: grey;
-    margin: 5px 0;
-    
-}
-.formulaire-titre2
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 5px 0;
-    color: grey;
-    font-family: courier;
-    font-size: 15px;
-}
-.formulaire1
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #ffca4b;
-    background-color: white;
-    width: 175px;
-    height: 25px;
-    margin: 5px 0;
-    text-align: center;
-    color: #ffca4b;
-    font-size: 15px;
-    font-family: courier;
-}
-.formulaire2
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #ffca4b;
-    background-color: white;
-    margin: 5px 0;
-    width: 145px;
-    height: 25px;
-    text-align: center;
-    color: #ffca4b;
-    font-family: courier;
-    font-size: 15px;
-}
-.coche
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #ffca4b;
-    background: white;
-}
-.bouton
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffca4b;
     border: 1px solid white;
+    background-color: transparent;
+    box-shadow: 0px 0px 15px #9F9F9F,
+                0px 0px 25px #9F9F9F;
+    width: 20%;
+    height: 55%;
+}
+
+.label-co-mdp
+{
+    font-size: 17px;
+    color: white;
+    margin: 3% 0;
+}
+
+.input-co-mdp
+{
+    border: 1px solid white;
+    background-color: transparent;
+    box-shadow: 0px 0px 15px #9F9F9F,
+                0px 0px 25px #9F9F9F;
+    width: 55%;
+    height: 10%;
+    color: white;
+}
+
+.input-co-mdp::placeholder
+{
+    text-align: center;
+    color: #118AB2;
+    font-size: 9px;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: -9px 0 white,
+    9px 0 #777777;
+}
+
+#bouton-co
+{
+    border: 1px solid white;
+    background-color: #118AB2;
+    box-shadow: 0px 0px 10px #9F9F9F,
+                0px 0px 15px #9F9F9F;
     color: white;
     text-decoration: none;
     text-align: center;
-    font-size: 15px;
-    font-family: courier;
-    margin: 5px 0;
-    
+    font-family: 'Press Start 2P', cursive;
+    font-size: 11px;
+    margin-top: 11%;
+    padding: 4%;
 }
-::placeholder
+
+#bouton-mdp
+{
+    border: 1px solid white;
+    background-color: #118AB2;
+    box-shadow: 0px 0px 10px #9F9F9F,
+                0px 0px 15px #9F9F9F;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 11px;
+    margin-top: 11%;
+    padding: 9%;
+}
+
+#bouton-co:hover
+{
+    border: 1px solid #118AB2;
+    box-shadow: 0px 0px 10px #777777,
+                0px 0px 15px #777777;
+    background-color: transparent;
+    color: #118AB2;
+}
+
+#bouton-mdp:hover
+{
+    border: 1px solid #118AB2;
+    box-shadow: 0px 0px 10px #777777,
+                0px 0px 15px #777777;
+    background-color: transparent;
+    color: #118AB2;
+}
+
+#flex-a
+{
+    margin-bottom: -3%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.a-co
+{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 1% 0;
+    text-shadow: -1px 0 0 #118AB2, 
+             1px 0 0 #118AB2,
+             0 -1px 0 #118AB2,
+             0 1px 0 #118AB2;
+}
+
+.a-co:hover
+{
+    transform: scale(1.1);
+}
+
+/* FIN CONNEXION | MOT DE PASSE*/
+
+abbr
+{
+    text-decoration: none;
+    animation: abbr-animation 5s infinite;
+}
+
+
+@keyframes abbr-animation
+{
+    0% {opacity: 1;}
+    25% {opacity: 0;}
+    50% {opacity: 1;}
+    75% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* DEBUT INSCRIPTION */
+
+#form-in
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    background-color: transparent;
+    box-shadow: 0px 0px 15px #9F9F9F,
+                0px 0px 25px #9F9F9F;
+    width: 30%;
+    height: 80%;
+}
+
+#flex1-in
 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    color: #ffca4b;
-    font-size: 15px;
-    font-family: courier;
+    margin: 0 5%;
 }
-.lien
+
+#flex2-in
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5%;
+}
+
+.label-in
+{
+    font-size: 17px;
+    color: white;
+    margin: 3% 0;
+}
+
+.input-in
+{
+    border: 1px solid white;
+    background-color: transparent;
+    box-shadow: 0px 0px 15px #9F9F9F,
+                0px 0px 25px #9F9F9F;
+    width: 75%;
+    color: #118AB2;
+}
+
+.input-in::placeholder
 {
     text-align: center;
-    color: #ffca4b;
-    font-size: 15px;
-    font-family: courier;
+    color: #118AB2;
+    font-size: 7px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+select
+{
+    border: 1px solid white;
+    background-color: white;
+    box-shadow: 0px 0px 15px #9F9F9F,
+                0px 0px 25px #9F9F9F;
+    width: 75%;
+    color: #118AB2;
+}
+
+#bouton-in
+{
+    border: 1px solid white;
+    background-color: #118AB2;
+    box-shadow: 0px 0px 10px #9F9F9F,
+                0px 0px 15px #9F9F9F;
+    color: white;
     text-decoration: none;
-    margin: 5px 0;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 9px;
+    margin-top: 25%;
+    padding: 9%;
+}
+
+#bouton-in:hover
+{
+    border: 1px solid #118AB2;
+    box-shadow: 0px 0px 10px #777777,
+                0px 0px 15px #777777;
+    background-color: transparent;
+    color: #118AB2;
+}
+
+/* FIN INSCRIPTION */
+
+footer
+{
+    height: 15%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0; right: 0;
 }
